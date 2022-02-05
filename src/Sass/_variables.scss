@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Evolventa-Regular';
+    src: url('../Fonts/Evolventa-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Evolventa-Bold';
+    src: url('../Fonts/Evolventa-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Evolventa-Oblique';
+    src: url('../Fonts/Evolventa-Oblique.ttf');
+}
+
+:root {
+    --white: #FAFAFA;
+    --skyblue: #568AAA;
+    --darkblue: #122E47;
+    --black: #0B0C0C;
+
+    --font1 : 'Rubik', sans-serif;
+    --font2 : 'Evolventa-Regular', sans-serif;
+    --font3 : 'Evolventa-Regular', sans-serif;
+    --font4 : 'Evolventa-Oblique', sans-serif;
+}
+
+$white: var(--white);
+$skyblue: var(--skyblue);
+$darkblue: var(--darkblue);
+$black: var(--black);
+
+$font1: var(--font1);
+$font2: var(--font2);
+$font3: var(--font3);
+$font4: var(--font4);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  

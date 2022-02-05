@@ -1,0 +1,86 @@
+@import './variables';
+@import './notfound';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    @media (max-width: 575.98px) {
+        font-size: 12px;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 1300px) and (max-width: 1531.98px){
+        font-size: 13px;
+    }
+}
+
+body {
+    background-color: $darkblue;
+    color: $white;
+    font-family: $font1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s ease-in-out;
+}
+
+.overflowX {
+	overflow-x: hidden;
+}
+
+p{
+    font-family: $font2;
+}
+
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+a{
+	margin:0;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+a, select , input , textarea , button{
+	outline: none !important;
+}
+
+.btn:focus, .btn.focus, .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+
+/*fonts*/
+
+
+.c--custom {
+    max-width: 90rem;
+}
+
+// .loading{
+//     @include flexCenter;
+//     min-height: 90vh;
+// }
