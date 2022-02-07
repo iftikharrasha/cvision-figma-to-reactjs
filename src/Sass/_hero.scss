@@ -1,0 +1,77 @@
+.hero{
+    padding-top: 10rem;
+    .hero-contents{
+        text-align: center;
+        h1{
+            font-size: 8.375rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            @media (max-width: 575.98px) {
+                font-size: 4rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 3.25rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                font-size: 6rem;
+            }
+            span{
+                font-weight: 400;
+            }
+        }
+        h2{
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            @media (max-width: 575.98px) {
+                font-size: 1.90rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 1.55rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                font-size: 2.85rem;
+            }
+            span{
+                font-weight: 700;
+            }
+        }
+        p{
+            width: 80%;
+            font-size: 1.25rem;
+            margin: 0 auto;
+            padding: 2rem 0 3rem 0;
+            line-height: 1.25;
+            @media (max-width: 575.98px) {
+                font-size: 1rem;
+            }
+            @media (max-width: 1299.98px)  {
+                width: 100%;
+            }
+        }
+        .hero-btn{
+            button{
+                border: 0.125rem solid $white;
+                padding: 1rem 3rem;
+                border-radius: 2.75rem;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: $darkblue;
+                margin: 0 2.5rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:nth-child(2n+1){
+                    background: none;
+                    color: $white;
+                }
+                @media (max-width: 575.98px) {
+                    margin: 1rem 2.5rem;
+                }
+            }
+        }
+        img{
+            padding: 5.5rem 0 2rem 0;
+            width: 100%;
+        }
+    }
+}

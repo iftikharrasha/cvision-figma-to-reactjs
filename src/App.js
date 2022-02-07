@@ -5,8 +5,9 @@ import {
   Route
 } from "react-router-dom";
 import ScrollToTop from './ScrollToTop.js';
-import './Sass/style.css';
+import Home from './Pages/Home/Home.js';
 import NotFound from './Pages/NotFound/NotFound.js';
+import './Sass/style.css';
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
             <ScrollToTop>
                 <Switch>
                     <Route path="/home">
-                           
+                           <Home/>
                     </Route>
                     <Route exact path="/">
-                        
+                           <Home/>
                     </Route>
                     <Route path="*">
                         <NotFound/>

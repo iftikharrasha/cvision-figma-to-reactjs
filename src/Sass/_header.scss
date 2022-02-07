@@ -1,0 +1,170 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.5s ease 0s;
+    padding: 2rem 0;
+    .header-contents{
+        @include flexCenter;
+        @media (max-width: 991.98px) {
+            justify-content: space-between;
+        }
+        .logo{
+            width: 23%;
+            img{
+                width: 15rem;
+                @media (max-width: 575.98px) {
+                    width: 10rem;
+                }
+            }
+        }
+        .nav-right{
+            width: 77%;
+            @media (max-width: 991.98px) {
+                display: none;
+            }
+            ul{
+                @include flexCenter;
+                li{
+                    position: relative;
+                    z-index: 1;
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        bottom: -.5rem;
+                        left: 0;
+                        height: .2rem;
+                        background-color: $white;
+                        width: 0;
+                        transition: all 0.5s ease 0s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        @media (max-width:1100px) {
+                            width: inherit;
+                        }
+                    }
+                    &:last-child{
+                        border: 0.125rem solid $white;
+                        padding: 0.75rem 1.75rem;
+                        border-radius: 2.75rem;
+                        &:hover::after{
+                            width: 0%;
+                        }
+                    }
+                    a{
+                        font-size: 1.25rem;
+                        color: $white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+            li{
+                margin-left: 4rem;
+            }
+        }
+    
+        .mobile-design{
+            .nav-toggle {
+                z-index: 9000;
+                cursor: pointer;
+                padding-right: 1rem;
+                .top{
+                    display: block;
+                    width: 1.625rem;
+                    height: 0.125rem;
+                    background-color: $white;
+                    transition: all 0.5s ease 0s;
+                    margin-bottom: 0.3125rem;
+                }
+                .mid{
+                    display: block;
+                    width: 1.625rem;
+                    height: 0.125rem;
+                    background-color: $white;
+                    transition: all 0.5s ease 0s;
+                    margin-bottom: 0.3125rem;
+                    position: relative;
+                }
+                .bot{
+                    display: block;
+                    width: 1.625rem;
+                    height: 0.125rem;
+                    background-color: $white;
+                    transition: all 0.5s ease 0s;
+                }
+                .top, .bot {
+                    transform-origin: 0.1875rem 0.125rem;
+                }
+            }
+            .nav-full{
+                ul{
+                    position: absolute;
+                    width: 70%;
+                    background-color: $black;
+                    top: 0;
+                    right: -100%;
+                    height: 100vh;
+                    display: grid;
+                    grid-template-rows: repeat(5, 10vh);
+                    align-content: center;
+                    justify-content: space-around;
+                    transition: all 0.5s ease 0s;
+                    li{
+                        a {
+                            text-align: center;
+                            font-size: 1.25rem;
+                            color: $white;
+                        }
+                        &:last-child{
+                            a {
+                                border: 0.125rem solid $white;
+                                padding: 0.75rem 1.75rem;
+                                border-radius: 1.75rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.open{
+    .mid {
+        opacity: 0;
+    }
+    .top {
+        transform: rotate(45deg);
+    }
+    .bot {
+        transform: rotate(-45deg);
+    }
+    .mobile-design{
+        .nav-full{
+            ul{
+                right: 0 !important;
+            }
+        }
+    }
+}
+
+.fixed-header {
+    padding: .75rem 0;
+    box-shadow: 0px 3px 6px #0000001a;
+    backdrop-filter: blur(5px);
+}
+
+.desktop-hidden {
+    display: none;
+    @media (max-width: 991.98px) {
+        display: inherit;
+    }
+}
