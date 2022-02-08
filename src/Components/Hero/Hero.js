@@ -15,9 +15,9 @@ const Hero = () => {
                             Moreover, software and cloud technologies implemented allow you to create your own driver profile with fleet management dashboard capabilities for commercial fleets. Try extended driver behavior & road reports via the Mobile app to get comprehensive vehicle monitoring & analysis.
                         </p>
                         <div className="hero-btn">
-                            <button>DMS</button>
-                            <button>Fleet dashboard</button>
-                            <button>ADAS</button>
+                            <a href="#dms"><button>DMS</button></a>
+                            <a href="#fleet"><button>Fleet dashboard</button></a>
+                            <a href="#adas"><button>ADAS</button></a>
                         </div>
                         <img src={ccam} alt={ccam} />
                     </div>

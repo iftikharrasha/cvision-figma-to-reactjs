@@ -1,5 +1,5 @@
 .about{
-    padding: 5rem 0;
+    padding: 7rem 0;
     .about-contents{
         @include flexCenter;
         @media (max-width: 991.98px) {
@@ -58,6 +58,7 @@
         }
         .about-left{
             width: 50%;
+            position: relative;
             @media (max-width: 991.98px) {
                 text-align: center;
                 width: 100%;
@@ -68,6 +69,25 @@
                 @media (max-width: 575.98px)  {
                     width: 100%;
                     height: auto;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 16.75rem;
+                background: linear-gradient(-45deg, $skyblue 5%, $darkblue 100%);
+                top: calc(33% - 1.25rem);
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 28rem;
+                height: 28rem;
+                filter: blur(5rem);
+                z-index: -1;
+                @media (max-width: 575.98px) {
+                    width: 20rem;
+                    height: 20rem;
                 }
             }
         }
