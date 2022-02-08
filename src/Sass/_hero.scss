@@ -1,5 +1,55 @@
 .hero{
+    position: relative;
     padding-top: 10rem;
+    .light-source{
+        position: absolute;
+        width: 100%;
+        min-height: 100rem;
+        top: 0;
+        left: 0;
+        filter: blur(8.75rem);
+        z-index: -1;
+        overflow: hidden;
+        @media (max-width: 575.98px) {
+            min-height: 80rem;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            min-height: 75rem;
+        }
+        @media (min-width: 992px) and (max-width: 1299.98px) {
+            min-height: 80rem;
+        }
+        .layer-blur {
+            position: absolute;
+            border-radius: 16.75rem;
+            background: linear-gradient(90deg, #ffffff9e 4%, #ffffff00 100%);
+            transform: rotate(-90deg);
+            top: calc(33% - 1.25rem);
+            left: calc(28% - 1.25rem);
+            width: 55rem;
+            height: 55rem;
+            @media (max-width: 575.98px) {
+                width: 30rem;
+                height: 30rem;
+                top: calc(50%);
+                left: calc(8%);
+                border-radius: 5rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                width: 40rem;
+                height: 40rem;
+                top: calc(43% - 1.25rem);
+                left: calc(20% - 1.25rem);
+                border-radius: 10rem;
+            }
+            @media (min-width: 992px) and (max-width: 1299.98px) {
+                width: 48rem;
+                height: 48rem;
+                top: calc(40% - 1.25rem);
+                left: calc(22% - 1.25rem);
+            }
+        }
+    }
     .hero-contents{
         text-align: center;
         h1{

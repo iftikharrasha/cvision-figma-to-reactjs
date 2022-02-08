@@ -5,6 +5,9 @@ const Hero = () => {
     return (
         <>
         <section className="hero">
+            <div class="light-source">
+                <div class="layer-blur"></div>
+            </div>
             <div className="container">
                 <div className="hero-contents">
                     <h1>Your <span>Safety</span></h1>
