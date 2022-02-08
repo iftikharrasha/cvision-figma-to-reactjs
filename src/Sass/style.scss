@@ -3,6 +3,7 @@
 @import './header';
 @import './hero';
 @import './features';
+@import './about';
 
 * {
     margin: 0;
@@ -72,9 +73,6 @@ a, select , input , textarea , button{
 .btn-link:focus, .btn-link.focus {
     text-decoration: none;
 }
-
-/*fonts*/
-
 
 .container {
     width: 90rem;

@@ -29,11 +29,11 @@ const Header = () => {
 
                         <nav className="nav-right">       
                             <ul>
-                                <li><Link to="/signup">About Us</Link></li>
-                                <li><Link to="/product">Product</Link></li>
-                                <li><Link to="/team">Team</Link></li>
-                                <li><Link to="/login">Sponsors</Link></li>
-                                <li><Link to="/login">Contact</Link></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#product">Product</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#sponsors">Sponsors</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
 
@@ -46,11 +46,11 @@ const Header = () => {
 
                             <div className="nav-full">
                                 <ul>
-                                    <li><Link to="/signup">About Us</Link></li>
-                                    <li><Link to="/login">Product</Link></li>
-                                    <li><Link to="/login">Team</Link></li>
-                                    <li><Link to="/login">Sponsors</Link></li>
-                                    <li><Link to="/login">Contact</Link></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#product">Product</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#sponsors">Sponsors</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
