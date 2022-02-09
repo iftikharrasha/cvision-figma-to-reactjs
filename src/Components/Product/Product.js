@@ -7,6 +7,9 @@ const Product = () => {
     return (
         <>
             <section className="product" id="product">
+                <div className="layer-blur blur-top"></div>
+                <div className="layer-blur blur-middle"></div>
+                <div className="layer-blur blur-bottom"></div>
                 <div className="container">
                     <div className="product-contents">
                         <div className="product-top">

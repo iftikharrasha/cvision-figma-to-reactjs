@@ -1,5 +1,7 @@
 .about{
-    padding: 7rem 0;
+    padding: 9rem 0 7rem 0;
+    position: relative;
+    z-index: 1;
     .about-contents{
         @include flexCenter;
         @media (max-width: 991.98px) {
