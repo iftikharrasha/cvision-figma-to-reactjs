@@ -13,7 +13,7 @@ import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 
 const Team = () => {
-    const images = [
+    const people = [
         {
             id: 1,
             url: girl01,
@@ -71,7 +71,7 @@ const Team = () => {
                             <SimpleReactLightbox>
                                 <SRLWrapper options={options}>
                                     {
-                                        images.map((item) => (
+                                        people.map((item) => (
                                             <div className="team-img" key={item.id}>
                                                 <img src={item.url} alt={item.title} />
                                             </div>
