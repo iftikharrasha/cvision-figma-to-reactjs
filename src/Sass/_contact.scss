@@ -1,0 +1,113 @@
+.contact{
+    padding: 3rem 0;
+    .contact-contents{
+        width: 86%;
+        margin: 0 auto;
+        position: relative;
+        padding: 6rem 1rem;
+        text-align: center;
+        border-radius: 1.25rem;
+        @media (max-width: 575.98px) {
+            width: 100%;
+            padding: 5rem 1.5rem;
+        }
+        @media (min-width: 576px) and (max-width: 1299.98px) {
+            width: 100%;
+            padding: 5rem;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background: linear-gradient(40deg, rgba(161, 198, 221, 0.5) 0%, rgba(161, 198, 221, 0.225) 100%);
+            filter: blur(1);
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 20px;
+        }
+        h6{
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 1.5rem;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 500;
+            padding-bottom: 1rem;
+            @media (max-width: 575.98px)  {
+                font-size: 2.125rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 2rem;
+            }
+            @media (min-width: 992px) and (max-width: 1299.98px) {
+                font-size: 2rem;
+            }
+        }
+        p{
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.5;
+            padding-bottom: 1rem;
+            width: 80%;
+            margin: 0 auto;
+            @media (max-width: 1299.98px) {
+                width: 100%;
+            }
+        }
+        .contact-form{
+            padding: 3rem 0 1rem 0;
+            form{
+                .form-items{
+                    @include flexCenter;
+                    flex-direction: column;
+                    input, textarea{
+                        width: 60%;
+                        font-family: $font2;
+                        font-size: 1.5rem;
+                        background-color: transparent;
+                        color: $white;
+                        padding: 0.85rem 1.5rem;
+                        margin-bottom: 1rem;
+                        border: 0.2rem solid #FFFFFF;
+                        box-sizing: border-box;
+                        border-radius: 3.75rem;
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                        }
+                        @media (min-width: 576px) and (max-width: 1299.98px) {
+                            width: 80%;
+                        }
+                    }
+                    textarea{
+                        border-radius: 1.85rem;
+                        padding: 0.95rem 1.5rem;
+                    }
+                    ::placeholder {
+                        color: $white;
+                        opacity: 1;
+                    }
+                    button{
+                        border: 0.125rem solid $white;
+                        padding: 1rem 3rem;
+                        border-radius: 2.75rem;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        color: $darkblue;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        margin: 2rem 0;
+                        @media (max-width: 575.98px) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
