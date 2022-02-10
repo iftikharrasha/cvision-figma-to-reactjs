@@ -21,19 +21,19 @@ const Header = () => {
             <header className={scroll ? "header fixed-header" : "header"} id="header">
                 <div className="container">
                     <div className="header-contents">
-                        <div className="logo">
-                            <Link to="/home">
+                        <div className="logo" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                            <Link to="/home" data-aos="flip-up">
                                 <img src={logo} alt={logo}/>
                             </Link>
                         </div>
 
                         <nav className="nav-right">       
                             <ul>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#product">Product</a></li>
-                                <li><a href="#team">Team</a></li>
-                                <li><a href="#sponsors">Sponsors</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true"><a href="#about">About Us</a></li>
+                                <li data-aos="flip-up" data-aos-delay="250" data-aos-duration="500" data-aos-once="true"><a href="#product">Product</a></li>
+                                <li data-aos="flip-up" data-aos-delay="400" data-aos-duration="500" data-aos-once="true"><a href="#team">Team</a></li>
+                                <li data-aos="flip-up" data-aos-delay="550" data-aos-duration="500" data-aos-once="true"><a href="#sponsors">Sponsors</a></li>
+                                <li data-aos="flip-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="true"><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
 

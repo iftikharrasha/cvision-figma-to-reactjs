@@ -12,7 +12,9 @@ import 'aos/dist/aos.css';
 import './Sass/style.css';
 
 function App() {
-  AOS.init();
+  AOS.init({
+    once: false,
+  });
 
   return (
     <div className="App">

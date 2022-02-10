@@ -12,37 +12,37 @@ const Features = () => {
             <section className="features">
                 <div className="container">
                     <div className="features-contents">
-                        <div className="single-item">
-                            <img src={road} alt={road} />
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <img src={road} alt={road}/>
                             <h2>Detect Road Obstacles</h2>
                             <p>Be prepared for road changes before you will know, see and understand them</p>
                         </div>
 
-                        <div className="single-item">
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                             <img src={collision} alt={collision} />
                             <h2>Collision’s Warning</h2>
                             <p>Instant analysis of the current situation and possible risks to prevent accidents</p>
                         </div>
 
-                        <div className="single-item">
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
                             <img src={monitoring} alt={monitoring} />
                             <h2>In-cabin Monitoring</h2>
                             <p>Real-time analysis of most in-cabin risk indicators to ensure maximum safety of the driver, passengers, and cargo during transportation</p>
                         </div>
 
-                        <div className="single-item">
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                             <img src={bell} alt={bell} />
                             <h2>AI Sounds Alerts</h2>
                             <p>CVISION comes with an AI Alerts system, providing a 1ms response to keep excellent ride focusing at different traffic conditions</p>
                         </div>
 
-                        <div className="single-item">
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
                             <img src={focusing} alt={focusing} />
                             <h2>Keep You Focusing</h2>
                             <p>Absolute focus on driving is the key to safe driving, and a camera with artificial intelligence will be your best assistant</p>
                         </div>
 
-                        <div className="single-item">
+                        <div className="single-item" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
                             <img src={realtime} alt={realtime} />
                             <h2>Real-time Reporting</h2>
                             <p>No delays to respond immediately to changes in driver behavior and traffic conditions</p>

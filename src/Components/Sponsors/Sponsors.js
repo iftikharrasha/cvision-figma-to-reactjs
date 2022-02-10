@@ -56,11 +56,11 @@ const Sponsors = () => {
             <section className="sponsors" id="sponsors">
                 <div className="container">
                     <div className="sponsors-contents">
-                        <h6>Our Sponsors & Partners</h6>
-                        <h2>Your Safety Comes First</h2>
-                        <p>And we can be proud that our partners and sponsors think the same, providing comprehensive support for the development of the CVISION project and improving the technological solutions used for camera-based driver monitoring systems.</p>
+                        <h6 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-duration="1000">Our Sponsors & Partners</h6>
+                        <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-duration="1000">Your Safety Comes First</h2>
+                        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="700" data-aos-duration="1000">And we can be proud that our partners and sponsors think the same, providing comprehensive support for the development of the CVISION project and improving the technological solutions used for camera-based driver monitoring systems.</p>
 
-                        <div className="sponsors-slider">
+                        <div className="sponsors-slider" data-aos-easing="ease-in-back" data-aos-delay="900" data-aos-duration="1000">
                             <Swiper
                                 grabCursor={true}
                                 slidesPerView={5}

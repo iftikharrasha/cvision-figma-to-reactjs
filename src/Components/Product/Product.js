@@ -13,9 +13,9 @@ const Product = () => {
                 <div className="container">
                     <div className="product-contents">
                         <div className="product-top">
-                            <h6>About CVISION Product</h6>
-                            <h2>CVISION AI Cameras to See Everything</h2>
-                            <p>Built-in two AI cameras with driver behavior monitoring system & advanced driving assistance system allow every car driver to stay up to date with any changes in traffic conditions and in-cabin situations, providing a real-time report with AI sound alerts.
+                            <h6 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="0">About CVISION Product</h6>
+                            <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="0">CVISION AI Cameras to See Everything</h2>
+                            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="0">Built-in two AI cameras with driver behavior monitoring system & advanced driving assistance system allow every car driver to stay up to date with any changes in traffic conditions and in-cabin situations, providing a real-time report with AI sound alerts.
                             </p>
                         </div>
                         <div className="product-details">
@@ -98,7 +98,7 @@ const Product = () => {
                                 </div>
                             </div>
 
-                            <div className="single-item" id="adas">
+                            <div className="single-item" id="adas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000">
                                 <div className="item-title">
                                     <h5><span>2</span></h5>
                                     <h2>Road Obstacles Detections</h2>
@@ -150,13 +150,13 @@ const Product = () => {
                             </div>
 
                             <div className="single-item" id="fleet">
-                                <div className="item-title">
+                                <div className="item-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000">
                                     <h5><span>3</span></h5>
                                     <h2>Evaluation Fleet Dashboard 24/7</h2>
                                 </div>
-                                <p>CVISION can become an indispensable assistant in fleet management, allowing owners to monitor the use and condition of vehicles remotely to receive detailed reports with:</p>
+                                <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000">CVISION can become an indispensable assistant in fleet management, allowing owners to monitor the use and condition of vehicles remotely to receive detailed reports with:</p>
 
-                                <div className="list-items justify-content-start pt-0">
+                                <div className="list-items justify-content-start pt-0" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000">
                                     <div className="single-list">
                                         <ul>
                                             <li className="pb-2-md"><span>Monitoring driver behavior</span></li>
@@ -174,21 +174,21 @@ const Product = () => {
                                     </div>
                                 </div>
 
-                                <img src={dashboard} alt={dashboard} className="pb-2"/>
+                                <img src={dashboard} alt={dashboard} className="pb-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000"/>
 
                                 <div className="extra-details">
-                                        <p>Moreover, you can create & manage the fleet owner personal account via a web application that allows you to:</p>
+                                    <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-duration="1000">Moreover, you can create & manage the fleet owner personal account via a web application that allows you to:</p>
                                 </div>
 
                                 <div className="list-items pt-0">
-                                    <div className="single-list w-50-sm w-100">
+                                    <div className="single-list w-50-sm w-100" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-duration="1000">
                                         <ul>
                                             <li className="pb-2-md"><span>Maintain a register of activated devices, vehicles, and fleet drivers </span></li>
                                             <li className="pb-2-md"><span>Maintain a register of vehicles & drivers documentation</span></li>
                                             <li className="pb-2-md"><span>Monitor the transportation quality (cargo & traffic safety, fuel economy, etc.)</span></li>
                                         </ul>
                                     </div>
-                                    <div className="single-list w-50-sm w-100 pl-2-md">
+                                    <div className="single-list w-50-sm w-100 pl-2-md" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-duration="1000">
                                         <ul>
                                             <li className="pb-2-md"><span>Visualize critical incidents and analyze key risk indicators</span></li>
                                             <li className="pb-2-md"><span>Account and analyze drivers' productivity and assessment of their work</span></li>
