@@ -1066,28 +1066,48 @@
   .team .team-contents .team-left {
     text-align: center;
     width: 100%;
-  }
-}
-
-.team .team-contents .team-left img {
-  width: 41.75rem;
-  height: 27.75rem;
-}
-
-@media (max-width: 991.98px) {
-  .team .team-contents .team-left img {
     margin-bottom: 5rem;
   }
 }
 
+.team .team-contents .team-left div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .team-contents .team-left img {
+  width: 13.125rem;
+  height: 13.125rem;
+  margin: 0.75rem;
+}
+
 @media (max-width: 575.98px) {
   .team .team-contents .team-left img {
-    width: 100%;
-    height: auto;
+    margin: 0.35rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1299.98px) {
+@media (min-width: 321px) and (max-width: 376px) {
+  .team .team-contents .team-left img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .team .team-contents .team-left img {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
   .team .team-contents .team-left img {
     width: 100%;
     height: auto;
@@ -1108,7 +1128,7 @@
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
   .team .team-contents .team-right {
-    padding-left: 5rem;
+    padding-left: 0;
   }
 }
 
@@ -1171,6 +1191,10 @@
 .team .team-contents .team-right .social-icons ul li a img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.css-v89g85 {
+  background-color: var(--skyblue) !important;
 }
 
 * {

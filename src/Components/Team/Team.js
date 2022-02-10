@@ -1,18 +1,84 @@
 import React from 'react';
-import people from '../../Images/people.webp';
 import facebook from '../../Images/facebook.svg';
 import twitter from '../../Images/twitter.svg';
 import linkedin from '../../Images/linkedin.svg';
 import instagram from '../../Images/instagram.svg';
+import girl01 from '../../Images/girl01.webp';
+import girl02 from '../../Images/girl02.webp';
+import girl03 from '../../Images/girl03.webp';
+import guy01 from '../../Images/guy01.webp';
+import guy02 from '../../Images/guy02.webp';
+import guy03 from '../../Images/guy03.webp';
+import SimpleReactLightbox from "simple-react-lightbox";
+import { SRLWrapper } from "simple-react-lightbox";
 
 const Team = () => {
+    const images = [
+        {
+            id: 1,
+            url: girl01,
+            title:"Name of Girl01"
+        },
+        {
+            id: 2,
+            url: girl02,
+            title:"Name of Girl02"
+        },
+        {
+            id: 3,
+            url: girl03,
+            title:"Name of Girl03"
+        },
+        {
+            id: 4,
+            url: guy01,
+            title:"Name of guy01"
+        },
+        {
+            id: 5,
+            url: guy02,
+            title:"Name of guy02"
+        },
+        {
+            id: 6,
+            url: guy03,
+            title:"Name of guy03"
+        },
+    ]
+
+    const options = {
+        settings: {
+          autoplaySpeed: 1500,
+          transitionSpeed: 900,
+          showDownloadButton: false,
+        },
+        buttons: {
+            showAutoplayButton: true,
+            showCloseButton: true,
+            showDownloadButton: false,
+            showFullscreenButton: false,
+            showNextButton: true,
+            showPrevButton: true,
+          }
+    };
+
     return (
         <>
             <section className="team" id="team">
                 <div className="container">
                     <div className="team-contents">
                         <div className="team-left">
-                            <img src={people} alt={people} />
+                            <SimpleReactLightbox>
+                                <SRLWrapper options={options}>
+                                    {
+                                        images.map((item) => (
+                                            <div className="team-img" key={item.id}>
+                                                <img src={item.url} alt={item.title} />
+                                            </div>
+                                        ))
+                                    }
+                                </SRLWrapper>
+                            </SimpleReactLightbox>
                         </div>
                         <div className="team-right">
                             <h6>The Team</h6>
