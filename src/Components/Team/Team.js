@@ -72,7 +72,7 @@ const Team = () => {
                                 <SRLWrapper options={options}>
                                     {
                                         people.map((item) => (
-                                            <div className="team-img" key={item.id} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay={item.id*100} data-aos-duration="1000" data-aos-offset="0">
+                                            <div className="team-img" key={item.id} data-aos="fade-zoom-in" data-aos-delay={item.id*100} data-aos-duration="1000" data-aos-offset="0">
                                                 <img src={item.url} alt={item.title}/>
                                             </div>
                                         ))
@@ -81,9 +81,9 @@ const Team = () => {
                             </SimpleReactLightbox>
                         </div>
                         <div className="team-right">
-                            <h6 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800" data-aos-duration="1000">The Team</h6>
-                            <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-duration="1000">People Who Want To <br /> Change Everything</h2>
-                            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1200" data-aos-duration="1000">“We want to provide a safe ride for everyone, regardless of their vehicle type & model. Our solution doesn't have sophisticated requirements for installation but offers many useful & practical features, suitable both for independent car owners and fleet management needs.” (с)...
+                            <h6 data-aos="fade-zoom-in" data-aos-delay="800" data-aos-duration="1000">The Team</h6>
+                            <h2 data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-duration="1000">People Who Want To <br /> Change Everything</h2>
+                            <p data-aos="fade-zoom-in" data-aos-delay="1200" data-aos-duration="1000">“We want to provide a safe ride for everyone, regardless of their vehicle type & model. Our solution doesn't have sophisticated requirements for installation but offers many useful & practical features, suitable both for independent car owners and fleet management needs.” (с)...
                                 <br /><br />
                                 CVISION project was created by a team of highly qualified experts in AI image processing and advanced driver monitoring systems. These people united on the way to the main goal – to make the modern road environment safer and more predictable for everyone. That is why they decided to bring together their experience, knowledge, and skills to research, implementation & customization AI algorithms for embedded semi-automative driving systems.
                             </p>

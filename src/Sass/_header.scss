@@ -66,6 +66,10 @@
                         border: 0.125rem solid $white;
                         padding: 0.75rem 1.75rem;
                         border-radius: 2.75rem;
+                        transition: all 0.5s ease-out 0s;
+                        &:hover {
+                            border-radius: 0;
+                        }
                         &:hover::after{
                             width: 0%;
                         }
@@ -177,7 +181,6 @@
     padding: .5rem 0;
     box-shadow: 0px 0.1875rem 0.375rem $darkblue;
     transition: all 0.5s ease 0s;
-    // backdrop-filter: blur(0.3rem);
     @media (max-width: 575.98px) {
         padding: 1.5rem 0;
     }

@@ -28,15 +28,15 @@ const Footer = () => {
                         <div className="container">
                             <div className="below-items">
                                 <div className="footer-left">
-                                    <h3 data-aos="fade-zoom-in" data-aos-easing="fade-up" data-aos-delay="200" data-aos-duration="1000">© 2021 CVISION. All rights reserved</h3>
+                                    <h3>© 2021 CVISION. All rights reserved</h3>
                                 </div>
                                 <div className="footer-right">
                                     <div className="social-icons">
                                         <ul>
-                                            <li data-aos="fade-zoom-in" data-aos-easing="fade-up" data-aos-delay="200" data-aos-duration="1000"><a href="#" target="_blank" rel="noopener noreferrer"><img src={dribbbleXs} alt={dribbbleXs}/></a></li>
-                                            <li data-aos="fade-zoom-in" data-aos-easing="fade-up" data-aos-delay="400" data-aos-duration="1000"><a href="#" target="_blank" rel="noopener noreferrer"><img src={instagramXs} alt={instagramXs}/></a></li>
-                                            <li data-aos="fade-zoom-in" data-aos-easing="fade-up" data-aos-delay="600" data-aos-duration="1000"><a href="#" target="_blank" rel="noopener noreferrer"><img src={twitterXs} alt={twitterXs}/></a></li>
-                                            <li data-aos="fade-zoom-in" data-aos-easing="fade-up" data-aos-delay="800" data-aos-duration="1000"><a href="#" target="_blank" rel="noopener noreferrer"><img src={youtubeXs} alt={youtubeXs}/></a></li>
+                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src={dribbbleXs} alt={dribbbleXs}/></a></li>
+                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src={instagramXs} alt={instagramXs}/></a></li>
+                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src={twitterXs} alt={twitterXs}/></a></li>
+                                            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src={youtubeXs} alt={youtubeXs}/></a></li>
                                         </ul>
                                     </div>
                                 </div>

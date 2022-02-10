@@ -1,15 +1,23 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
         <>
+        <Helmet>
+                <title>Cvision Automotive | 404</title>
+        </Helmet>
         <section className="notFound">
-            <div>
-                <h2 className="reg-28">404</h2>
-                <div className="bar lit-14">
+            <div className="notfound-text">
+                <h2>404</h2>
+                <div className="bar">
                     <h3>This page could not be found</h3>
                 </div>
             </div>
+            <Link to="/" data-aos="fade" data-aos-delay="600" data-aos-duration="1000">
+                <button>Go Back</button>
+            </Link>
         </section>
         </>
     );
