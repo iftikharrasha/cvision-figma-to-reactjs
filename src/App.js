@@ -7,9 +7,13 @@ import {
 import ScrollToTop from './ScrollToTop.js';
 import Home from './Pages/Home/Home.js';
 import NotFound from './Pages/NotFound/NotFound.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Sass/style.css';
 
 function App() {
+  AOS.init();
+
   return (
     <div className="App">
         <Router>

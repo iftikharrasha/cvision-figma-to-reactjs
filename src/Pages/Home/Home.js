@@ -7,6 +7,7 @@ import Product from '../../Components/Product/Product';
 import Team from '../../Components/Team/Team';
 import Sponsors from '../../Components/Sponsors/Sponsors';
 import Contact from '../../Components/Contact/Contact';
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Team/>
             <Sponsors/>
             <Contact/>
+            <Footer/>
         </>
     );
 };
