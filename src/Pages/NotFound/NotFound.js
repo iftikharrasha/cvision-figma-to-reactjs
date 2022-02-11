@@ -6,7 +6,7 @@ const NotFound = () => {
     return (
         <>
         <Helmet>
-                <title>Cvision Automotive | 404</title>
+            <title>Cvision Automotive | 404 Not Found</title>
         </Helmet>
         <section className="notFound">
             <div className="notfound-text">

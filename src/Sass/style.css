@@ -156,6 +156,12 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .header .header-contents .logo img {
+    width: 15rem;
+  }
+}
+
 .header .header-contents .nav-right {
   width: 75%;
 }
@@ -337,17 +343,13 @@
           box-shadow: 0px 0.1875rem 0.375rem var(--darkblue);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  background: var(--darkblue);
 }
 
 @media (max-width: 575.98px) {
   .fixed-header {
     padding: 1.5rem 0;
   }
-}
-
-.fixed-header::before {
-  -webkit-filter: blur(0.1);
-          filter: blur(0.1);
 }
 
 .fixed-header .header-contents .logo {
