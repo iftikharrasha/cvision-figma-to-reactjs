@@ -1,5 +1,5 @@
 @import './variables';
-@import './notfound';
+@import './loader';
 @import './header';
 @import './hero';
 @import './features';
@@ -9,6 +9,7 @@
 @import './sponsors';
 @import './contact';
 @import './footer';
+@import './notfound';
 
 * {
     margin: 0;
@@ -41,6 +42,26 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: all 0.3s ease-in-out;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0.1875rem;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    background: $skyblue;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $skyblue;
 }
 
 .overflowX {
@@ -113,7 +134,11 @@ a, select , input , textarea , button{
 .pt-0{
     padding-top: 0 !important;
 }
-
+.mb-xs-0{
+    @media (max-width: 575.98px) {
+        margin-bottom: 0 !important;
+    }
+}
 .pb-2{
     padding-bottom: 2rem !important;
 }

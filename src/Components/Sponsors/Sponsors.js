@@ -4,6 +4,9 @@ import ambarella from '../../Images/ambarella-logo.webp';
 import cipia from '../../Images/cipia-logo.webp';
 import jabil from '../../Images/jabil-logo.webp';
 import seat from '../../Images/seat-logo.webp';
+import the_next_society from '../../Images/the-next-society-logo.webp';
+import berytech_logo from '../../Images/berytech-logo.webp';
+import hcie_logo from '../../Images/hcie-logo.webp';
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
@@ -47,6 +50,21 @@ const Sponsors = () => {
         {
             id: 7,
             url: cipia,
+            title:"Cipia-2"
+        },
+        {
+            id: 8,
+            url: the_next_society,
+            title:"Seat"
+        },
+        {
+            id: 9,
+            url: berytech_logo,
+            title:"Globoconnect-2"
+        },
+        {
+            id: 10,
+            url: hcie_logo,
             title:"Cipia-2"
         },
     ]

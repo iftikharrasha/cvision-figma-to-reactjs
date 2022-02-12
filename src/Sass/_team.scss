@@ -10,6 +10,8 @@
         .team-left{
             width: 50%;
             position: relative;
+            @include flexCenter;
+            flex-wrap: wrap;
             @media (max-width: 991.98px) {
                 text-align: center;
                 width: 100%;
@@ -20,25 +22,69 @@
                 justify-content: center;
                 flex-wrap: wrap;
             }
-            img{
-                cursor: pointer;
-                width: 13.125rem;
-                height: 13.125rem;
-                margin: 0.75rem;
-                @media (max-width: 575.98px)  {
-                    margin: 0.35rem;
+            .team-img{
+                .team-flip{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transition: transform 0.5s linear;
+                    transform-style: preserve-3d;
+                    position: relative;
+                    .front, .back {
+                        backface-visibility: hidden;
+                    }
+                    .front{
+                        img{
+                            cursor: pointer;
+                            width: 13.125rem;
+                            height: 13.125rem;
+                            object-fit: cover;
+                            margin: 0.75rem;
+                            @media (max-width: 575.98px)  {
+                                margin: 0.35rem;
+                            }
+                            @media (min-width: 321px) and (max-width: 376px) {
+                                width: 12rem;
+                                height: 12rem;
+                            }
+                            @media (max-width: 320px) {
+                                width: 11rem;
+                                height: 11rem;
+                            }
+                        }
+                    }
+                    .back {
+                        @include flexCenter;
+                        flex-direction: column;
+                        text-align: center;
+                        background: linear-gradient(-45deg, $skyblue 5%, $darkblue 100%);
+                        transform: rotateY(180deg);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 10px;
+                        h2{
+                            font-family: $font2;
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                            @media (max-width: 575.98px) {
+                                font-size: 1rem;
+                            }
+                        }
+                        p{
+                            padding-top: 0.25rem;
+                            font-family: $font4;
+                            font-size: 1rem;
+                        }
+                    }
                 }
-                @media (min-width: 321px) and (max-width: 376px) {
-                    width: 12rem;
-                    height: 12rem;
-                }
-                @media (max-width: 320px) {
-                    width: 11rem;
-                    height: 11rem;
-                }
-                @media (min-width: 768px) and (max-width: 991.98px) {
-                    width: 100%;
-                    height: auto;
+                &:hover{
+                    .team-flip{
+                        transform: rotateY(180deg);
+                    }
                 }
             }
         }

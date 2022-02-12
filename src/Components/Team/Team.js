@@ -6,61 +6,49 @@ import instagram from '../../Images/instagram.svg';
 import girl01 from '../../Images/girl01.webp';
 import girl02 from '../../Images/girl02.webp';
 import girl03 from '../../Images/girl03.webp';
-import guy01 from '../../Images/guy01.webp';
 import guy02 from '../../Images/guy02.webp';
 import guy03 from '../../Images/guy03.webp';
-import SimpleReactLightbox from "simple-react-lightbox";
-import { SRLWrapper } from "simple-react-lightbox";
+import atefshkokani from '../../Images/atefshkokani.webp';
 
 const Team = () => {
     const people = [
         {
             id: 1,
             url: girl01,
-            title:"Name of Girl01"
+            name:"Name of Girl01",
+            title:"Title of Girl01"
         },
         {
             id: 2,
             url: girl02,
-            title:"Name of Girl02"
+            name:"Name of Girl02",
+            title:"Title of Girl01"
         },
         {
             id: 3,
-            url: girl03,
-            title:"Name of Girl03"
+            url: atefshkokani,
+            name:"Atef Shkokani",
+            title:"Founder and CEO"
         },
         {
             id: 4,
-            url: guy01,
-            title:"Name of guy01"
+            url: girl03,
+            name:"Name of Girl03",
+            title:"Title of Girl01"
         },
         {
             id: 5,
             url: guy02,
-            title:"Name of guy02"
+            name:"Name of guy02",
+            title:"Title of Girl01"
         },
         {
             id: 6,
             url: guy03,
-            title:"Name of guy03"
+            name:"Name of guy03",
+            title:"Title of Girl01"
         },
     ]
-
-    const options = {
-        settings: {
-          autoplaySpeed: 1500,
-          transitionSpeed: 900,
-          showDownloadButton: false,
-        },
-        buttons: {
-            showAutoplayButton: true,
-            showCloseButton: true,
-            showDownloadButton: false,
-            showFullscreenButton: false,
-            showNextButton: true,
-            showPrevButton: true,
-          }
-    };
 
     return (
         <>
@@ -68,17 +56,21 @@ const Team = () => {
                 <div className="container">
                     <div className="team-contents">
                         <div className="team-left">
-                            <SimpleReactLightbox>
-                                <SRLWrapper options={options}>
-                                    {
-                                        people.map((item) => (
-                                            <div className="team-img" key={item.id} data-aos="fade-zoom-in" data-aos-delay={item.id*100} data-aos-duration="1000" data-aos-offset="0">
-                                                <img src={item.url} alt={item.title}/>
+                            {
+                                people.map((item) => (
+                                    <div className="team-img" key={item.id} data-aos="fade-zoom-in" data-aos-delay={item.id*100} data-aos-duration="1000" data-aos-offset="0">
+                                        <div className="team-flip">
+                                            <div className="front">
+                                                <img src={item.url} alt={item.name}/>
                                             </div>
-                                        ))
-                                    }
-                                </SRLWrapper>
-                            </SimpleReactLightbox>
+                                            <div className="back">
+                                                <h2>{item.name},</h2>
+                                                <p>{item.title}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </div>
                         <div className="team-right">
                             <h6 data-aos="fade-zoom-in" data-aos-delay="800" data-aos-duration="1000">The Team</h6>

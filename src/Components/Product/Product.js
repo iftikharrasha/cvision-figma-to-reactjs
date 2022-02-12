@@ -94,7 +94,7 @@ const Product = () => {
                                             <li>Vehicle condition indicators (inside temperature, smoke, opening/closing of the cabin door, unauthorized driver)</li>
                                             <li>Presence & proper using of a child seat and child in cabin</li>
                                         </ul>
-                                        <p>In-cabin camera only tracks factors, affecting on road safety, but it DOESN'T record inside videos & conversations to keep the driver's confidence & and passengers' privacy.</p> 
+                                        <p class="imp">In-cabin camera only tracks factors, affecting on road safety, but it DOESN'T record inside videos & conversations to keep the driver's confidence & and passengers' privacy.</p> 
                                 </div>
                             </div>
 
@@ -106,7 +106,7 @@ const Product = () => {
                                 <p>Front AI cameras with Advanced Driving Assistance System “ADAS” help monitor current road situation and instant changes, providing quick response and sound alerts to increase driver awareness and risk focus. Trackers and analyzers road environment detect the nearby, far obstacles and driver errors based on information from the following built-in features:</p>
 
                                 <div className="list-items justify-content-start pt-0">
-                                    <div className="single-list">
+                                    <div className="single-list mb-xs-0">
                                         <ul>
                                             <li className="pb-2-md"><span>Lane departure warning (LDW)</span></li>
                                             <li className="pb-2-md"><span>Forward-collision warning (FCW)</span></li>
@@ -130,7 +130,7 @@ const Product = () => {
                                 </div>
 
                                 <div className="list-items pt-0">
-                                    <div className="single-list w-50-sm w-100">
+                                    <div className="single-list w-50-sm w-100 mb-xs-0">
                                         <ul>
                                             <li className="pb-2-md"><span>Road markings observation and traffic signs</span></li>
                                             <li className="pb-2-md"><span> Driver's compliance with traffic regulation (speed limits, the actual speed with the amount of speeding, etc.) </span></li>
@@ -157,7 +157,7 @@ const Product = () => {
                                 <p data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="1000">CVISION can become an indispensable assistant in fleet management, allowing owners to monitor the use and condition of vehicles remotely to receive detailed reports with:</p>
 
                                 <div className="list-items justify-content-start pt-0" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="1000">
-                                    <div className="single-list">
+                                    <div className="single-list mb-xs-0">
                                         <ul>
                                             <li className="pb-2-md"><span>Monitoring driver behavior</span></li>
                                             <li className="pb-2-md"><span>Driving skills evaluation </span></li>
@@ -181,7 +181,7 @@ const Product = () => {
                                 </div>
 
                                 <div className="list-items pt-0">
-                                    <div className="single-list w-50-sm w-100" data-aos="fade-zoom-in" data-aos-delay="400" data-aos-duration="1000">
+                                    <div className="single-list w-50-sm w-100 mb-xs-0" data-aos="fade-zoom-in" data-aos-delay="400" data-aos-duration="1000">
                                         <ul>
                                             <li className="pb-2-md"><span>Maintain a register of activated devices, vehicles, and fleet drivers </span></li>
                                             <li className="pb-2-md"><span>Maintain a register of vehicles & drivers documentation</span></li>
