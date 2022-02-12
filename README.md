@@ -89,8 +89,8 @@ A quick look at the top-level files hierarchy.
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Black          | ![#000000](https://via.placeholder.com/10/0000?text=+) `#000000` |
-| Darkblue        | ![#F4DD1E](https://via.placeholder.com/10/F4DD1E?text=+) `#122E47` |
-| Skyblue        | ![#F4DD1E](https://via.placeholder.com/10/F4DD1E?text=+) `#568AAA` |
+| Darkblue        | ![#122E47](https://via.placeholder.com/10/F4DD1E?text=+) `#122E47` |
+| Skyblue        | ![#568AAA](https://via.placeholder.com/10/F4DD1E?text=+) `#568AAA` |
 | White          | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff` |
 
 
