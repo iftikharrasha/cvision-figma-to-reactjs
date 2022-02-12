@@ -19,7 +19,7 @@ const Home = () => {
         setTimeout(() => {
             main.classList.add('view-content');
             preloader.classList.add('hide-preloader');
-        }, 4000);
+        }, 3000);
     }, []);
 
     return (

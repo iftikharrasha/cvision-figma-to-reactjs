@@ -53,6 +53,21 @@
   z-index: 99999;
 }
 
+.preloader .anime {
+  width: 300px;
+  height: 300px;
+}
+
+.preloader .arc {
+  width: 2.75rem;
+  height: 2.75rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .preloader::before {
   content: "";
   position: absolute;

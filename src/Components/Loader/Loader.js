@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
+import arc from '../../Images/arc.svg';
 import animationData from '../../Images/loader.json';
 
 const Loader = () => {
@@ -16,8 +17,9 @@ const Loader = () => {
         <>
             <div class="preloader">
                 <Lottie options={defaultOptions}
-                    height={200}
-                    width={200}/>
+                    height={300}
+                    width={300}/>
+                <img src={arc} alt="arc" className="arc"/>
             </div>
         </>
     );
