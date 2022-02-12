@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import Features from '../../Components/Features/Features';
@@ -12,15 +12,17 @@ import {Helmet} from "react-helmet";
 import Loader from '../../Components/Loader/Loader';
 
 const Home = () => {
-
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
-        const preloader = document.querySelector('.preloader');
-        const main = document.querySelector('.main')
+        document.body.style.overflow = "hidden";
+
         setTimeout(() => {
-            main.classList.add('view-content');
-            preloader.classList.add('hide-preloader');
-        }, 3000);
-    }, []);
+            setLoading(false)
+        }, 3500)  
+        
+        document.body.style.overflow = "visible";
+        
+    }, [])
 
     return (
         <>
@@ -31,19 +33,24 @@ const Home = () => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"/>
             </Helmet>
 
-            <Loader/>
+                {
+                    loading && <Loader/>
+                }
 
-            <main className="main">
-                <Header/>
-                <Hero/>
-                <Features/>
-                <About/>
-                <Product/>
-                <Team/>
-                <Sponsors/>
-                <Contact/>
-                <Footer/>
-            </main>
+                {
+                    !loading &&  
+                    <main className="main">
+                        <Header/>
+                        <Hero/>
+                        <Features/>
+                        <About/>
+                        <Product/>
+                        <Team/>
+                        <Sponsors/>
+                        <Contact/>
+                        <Footer/>
+                    </main>
+                }
         </>
     );
 };
