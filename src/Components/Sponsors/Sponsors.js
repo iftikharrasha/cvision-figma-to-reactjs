@@ -1,9 +1,9 @@
 import React from 'react';
-import globoconnect from '../../Images/globoconnect-logo.webp';
-import ambarella from '../../Images/ambarella-logo.webp';
-import cipia from '../../Images/cipia-logo.webp';
-import jabil from '../../Images/jabil-logo.webp';
-import seat from '../../Images/seat-logo.webp';
+// import globoconnect from '../../Images/globoconnect-logo.webp';
+// import ambarella from '../../Images/ambarella-logo.webp';
+// import cipia from '../../Images/cipia-logo.webp';
+// import jabil from '../../Images/jabil-logo.webp';
+// import seat from '../../Images/seat-logo.webp';
 import the_next_society from '../../Images/the-next-society-logo.webp';
 import berytech_logo from '../../Images/berytech-logo.webp';
 import hcie_logo from '../../Images/hcie-logo.webp';
@@ -17,41 +17,41 @@ SwiperCore.use([Pagination]);
 const Sponsors = () => {
     
     const partners = [
-        {
-            id: 1,
-            url: globoconnect,
-            title:"Globoconnect"
-        },
-        {
-            id: 2,
-            url: cipia,
-            title:"Cipia"
-        },
-        {
-            id: 3,
-            url: ambarella,
-            title:"Ambarella"
-        },
-        {
-            id: 4,
-            url: jabil,
-            title:"Jabil"
-        },
-        {
-            id: 5,
-            url: seat,
-            title:"Seat"
-        },
-        {
-            id: 6,
-            url: globoconnect,
-            title:"Globoconnect-2"
-        },
-        {
-            id: 7,
-            url: cipia,
-            title:"Cipia-2"
-        },
+        // {
+        //     id: 1,
+        //     url: globoconnect,
+        //     title:"Globoconnect"
+        // },
+        // {
+        //     id: 2,
+        //     url: cipia,
+        //     title:"Cipia"
+        // },
+        // {
+        //     id: 3,
+        //     url: ambarella,
+        //     title:"Ambarella"
+        // },
+        // {
+        //     id: 4,
+        //     url: jabil,
+        //     title:"Jabil"
+        // },
+        // {
+        //     id: 5,
+        //     url: seat,
+        //     title:"Seat"
+        // },
+        // {
+        //     id: 6,
+        //     url: globoconnect,
+        //     title:"Globoconnect-2"
+        // },
+        // {
+        //     id: 7,
+        //     url: cipia,
+        //     title:"Cipia-2"
+        // },
         {
             id: 8,
             url: the_next_society,
@@ -81,7 +81,7 @@ const Sponsors = () => {
                         <div className="sponsors-slider" data-aos-delay="900" data-aos-duration="1000">
                             <Swiper
                                 grabCursor={true}
-                                slidesPerView={5}
+                                slidesPerView={3}
                                 spaceBetween={10}
                                 pagination={{
                                     clickable: true,
@@ -91,13 +91,13 @@ const Sponsors = () => {
                                 className="mySwiper"
                                 breakpoints={{
                                     320: {
-                                      slidesPerView: 3,
+                                      slidesPerView: 1,
                                     },
                                     400: {
-                                      slidesPerView: 3,
+                                      slidesPerView: 1,
                                     },
                                     640: {
-                                      slidesPerView: 5
+                                      slidesPerView: 3
                                     },
                                 }}
                             >
