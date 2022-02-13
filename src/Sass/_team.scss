@@ -15,7 +15,7 @@
             @media (max-width: 991.98px) {
                 text-align: center;
                 width: 100%;
-                margin-bottom: 5rem;
+                order: 2;
             }
             div{
                 display: flex;
@@ -94,6 +94,8 @@
             @media (max-width: 991.98px) {
                 padding-left: 0;
                 width: 100%;
+                order: 1;
+                margin-bottom: 5rem;
             }
             @media (min-width: 992px) and (max-width: 1299.98px) {
                 padding-left: 0;

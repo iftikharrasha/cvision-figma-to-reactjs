@@ -1250,7 +1250,9 @@
   .team .team-contents .team-left {
     text-align: center;
     width: 100%;
-    margin-bottom: 5rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -1378,6 +1380,10 @@
   .team .team-contents .team-right {
     padding-left: 0;
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 5rem;
   }
 }
 
